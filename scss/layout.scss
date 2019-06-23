@@ -1,0 +1,76 @@
+@import "fonts";
+body{
+  font-size: 14px;
+}
+.and-img1{
+  width: 200px;
+}
+#header{
+  span{
+    font-family:'UTM Nokia Regular';
+    color: #FFFFFF;
+    font-size: 32px;
+  }
+}
+#app{
+  background-color: #4e0110;
+}
+.and-copyright{
+  color: #ffcc00;
+  font-size: 13px;
+}
+.and-block1{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  article{
+    h2,h5{
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    h2{
+      color: #ffcc00;
+    }
+    h5{
+      color: #ffcc00;
+    }
+  }
+}
+#and-menu{
+  background-color: rgba(176, 14, 31, 0.4);
+  border-bottom: 2px solid #95131e;
+  .uk-navbar-nav{
+    >li{
+      &:not(:last-child){
+        >a{
+          &:after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            display: inline-block;
+            background-color: #95131e;
+            top: calc((100% - 20px)/2);
+            right: 0;
+          }
+        }
+      }
+      &.uk-active{
+        >a{
+          background-color: #95131e;
+          color: #ffcc00;
+        }
+      }
+      >a{
+        min-height: 50px;
+        position: relative;
+        color: #FFFFFF;
+        font-size: 13px;
+        font-family: 'Cabin', sans-serif;
+        &:hover{
+          background-color: #95131e;
+          color: #ffcc00;
+        }
+      }
+    }
+  }
+}
